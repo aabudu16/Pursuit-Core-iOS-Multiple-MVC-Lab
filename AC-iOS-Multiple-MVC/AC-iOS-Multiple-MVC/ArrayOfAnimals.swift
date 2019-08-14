@@ -10,31 +10,16 @@ import UIKit
 
 struct ArrayOfAnimals{
     
-    var mammal = [ZooAnimal]()
-    var insect = [ZooAnimal]()
-    var birds = [ZooAnimal]()
-    var reptile = [ZooAnimal]()
-    var amphibian = [ZooAnimal]()
+    
+    
+    var mammal = ZooAnimal.zooAnimals.filter({$0.classification == "Mammal"})
+    var insect = ZooAnimal.zooAnimals.filter({$0.classification == "Insect"})
+    var birds = ZooAnimal.zooAnimals.filter({$0.classification == "Bird"})
+    var reptile = ZooAnimal.zooAnimals.filter({$0.classification == "Reptile"})
+    var amphibian = ZooAnimal.zooAnimals.filter({$0.classification == "Amphibian"})
     
    mutating func SortingClassification() ->[[ZooAnimal]] {
         
-        
-        for animals in ZooAnimal.zooAnimals{
-            switch animals.classification{
-            case "Mammal":
-                mammal.append(animals)
-            case "Insect":
-                insect.append(animals)
-            case "Bird":
-                birds.append(animals)
-            case "Reptile":
-                reptile.append(animals)
-            case "Amphibian":
-                amphibian.append(animals)
-            default:
-                break
-            }
-        }
     let allAnimalArray = [mammal, insect, birds, reptile, amphibian]
     return allAnimalArray
 }
