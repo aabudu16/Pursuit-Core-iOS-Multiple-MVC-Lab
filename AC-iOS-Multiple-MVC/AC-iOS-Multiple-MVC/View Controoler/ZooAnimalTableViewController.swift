@@ -28,20 +28,8 @@ class ZooAnimalTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        switch section {
-        case 0:
-            return "Mammal"
-        case 1:
-            return "Insect"
-        case 2:
-            return "Bird"
-        case 3:
-            return "Reptile"
-        case 4:
-            return "Amphibian"
-        default:
-            return ""
-        }
+//this code goes into the [[ZooAnimal]], grabs each section starting from index 0, and grabs the classification string and returns it to be displayed in the title header
+        return arrayOfSortedAnimals[section][0].classification
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -69,6 +57,7 @@ class ZooAnimalTableViewController: UITableViewController {
             storyBoard.instantiateViewController(withIdentifier: "ZooStoryBoardID") as! ZooDetailViewController
         
         let info = arrayOfSortedAnimals[indexPath.section][indexPath.row]
+        
         zooDetailViewController.animals = info
         
         self.navigationController?.pushViewController(zooDetailViewController, animated: true)

@@ -9,9 +9,7 @@
 import UIKit
 
 struct ArrayOfAnimals{
-    
-    
-    
+
     var mammal = ZooAnimal.zooAnimals.filter({$0.classification == "Mammal"})
     var insect = ZooAnimal.zooAnimals.filter({$0.classification == "Insect"})
     var birds = ZooAnimal.zooAnimals.filter({$0.classification == "Bird"})
