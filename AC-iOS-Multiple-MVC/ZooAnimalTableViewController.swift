@@ -34,20 +34,8 @@ class ZooAnimalTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        switch section{
-        case 0:
-            return animals.mammal.count
-        case 1:
-            return animals.insect.count
-        case 2:
-            return animals.birds.count
-        case 3:
-            return animals.reptile.count
-        case 4:
-            return animals.amphibian.count
-        default:
-            return -1
-        }
+        return arrayOfSortedAnimals[section].count
+        
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
