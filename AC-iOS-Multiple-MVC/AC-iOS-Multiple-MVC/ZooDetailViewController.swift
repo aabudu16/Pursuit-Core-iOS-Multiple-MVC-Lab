@@ -10,13 +10,16 @@ import UIKit
 
 class ZooDetailViewController: UIViewController {
     
+    var animals: ZooAnimal!
     @IBOutlet var zooDiscription: UITextView!
     @IBOutlet var zooAnimalName: UILabel!
     @IBOutlet var zooImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+    zooImage.image = UIImage(named: String(animals.imageNumber))
+        zooAnimalName.text = animals.name
+        zooDiscription.text = animals.info
        
     }
     

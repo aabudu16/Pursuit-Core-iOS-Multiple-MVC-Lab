@@ -1,10 +1,3 @@
-//
-//  ZooAnimalTableViewController.swift
-//  AC-iOS-Multiple-MVC
-//
-//  Created by Mr Wonderful on 8/13/19.
-//  Copyright © 2019 AC-iOS. All rights reserved.
-//
 
 import UIKit
 
@@ -19,11 +12,7 @@ class ZooAnimalTableViewController: UITableViewController {
         
         
         arrayOfSortedAnimals = animals.SortingClassification()
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-        
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+
     }
     
     // MARK: - Table view data source
@@ -76,12 +65,13 @@ class ZooAnimalTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        let ZooDetailViewController =
+        let zooDetailViewController =
             storyBoard.instantiateViewController(withIdentifier: "ZooStoryBoardID") as! ZooDetailViewController
         
+        let info = arrayOfSortedAnimals[indexPath.section][indexPath.row]
+        zooDetailViewController.animals = info
         
-        
-        self.navigationController?.pushViewController(ZooDetailViewController, animated: true)
+        self.navigationController?.pushViewController(zooDetailViewController, animated: true)
     }
     
     /*
