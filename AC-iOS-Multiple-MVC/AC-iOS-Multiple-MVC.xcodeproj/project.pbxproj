@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		850342F1230333880007479E /* ZooAnimalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850342F0230333880007479E /* ZooAnimalTableViewController.swift */; };
+		850342F3230334BA0007479E /* ZooAnimalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850342F2230334BA0007479E /* ZooAnimalTableViewCell.swift */; };
+		850342F52303413A0007479E /* ZooDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850342F42303413A0007479E /* ZooDetailViewController.swift */; };
+		850342F72303489C0007479E /* ArrayOfAnimals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850342F62303489C0007479E /* ArrayOfAnimals.swift */; };
 		DE07F55F1FAB611300DA3ABA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE07F55E1FAB611300DA3ABA /* AppDelegate.swift */; };
-		DE07F5611FAB611300DA3ABA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE07F5601FAB611300DA3ABA /* ViewController.swift */; };
 		DE07F5641FAB611300DA3ABA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE07F5621FAB611300DA3ABA /* Main.storyboard */; };
 		DE07F5661FAB611300DA3ABA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE07F5651FAB611300DA3ABA /* Assets.xcassets */; };
 		DE07F5691FAB611300DA3ABA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE07F5671FAB611300DA3ABA /* LaunchScreen.storyboard */; };
@@ -16,9 +19,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		850342F0230333880007479E /* ZooAnimalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZooAnimalTableViewController.swift; sourceTree = "<group>"; };
+		850342F2230334BA0007479E /* ZooAnimalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZooAnimalTableViewCell.swift; sourceTree = "<group>"; };
+		850342F42303413A0007479E /* ZooDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZooDetailViewController.swift; sourceTree = "<group>"; };
+		850342F62303489C0007479E /* ArrayOfAnimals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayOfAnimals.swift; sourceTree = "<group>"; };
 		DE07F55B1FAB611300DA3ABA /* AC-iOS-Multiple-MVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AC-iOS-Multiple-MVC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE07F55E1FAB611300DA3ABA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DE07F5601FAB611300DA3ABA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DE07F5631FAB611300DA3ABA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DE07F5651FAB611300DA3ABA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE07F5681FAB611300DA3ABA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +46,7 @@
 		DE07F5521FAB611300DA3ABA = {
 			isa = PBXGroup;
 			children = (
+				850342F0230333880007479E /* ZooAnimalTableViewController.swift */,
 				DE07F55D1FAB611300DA3ABA /* AC-iOS-Multiple-MVC */,
 				DE07F55C1FAB611300DA3ABA /* Products */,
 			);
@@ -57,8 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				DE07F5701FAB627600DA3ABA /* ZooAnimal.swift */,
-				DE07F5601FAB611300DA3ABA /* ViewController.swift */,
+				850342F62303489C0007479E /* ArrayOfAnimals.swift */,
 				DE07F5621FAB611300DA3ABA /* Main.storyboard */,
+				850342F42303413A0007479E /* ZooDetailViewController.swift */,
+				850342F2230334BA0007479E /* ZooAnimalTableViewCell.swift */,
 				DE07F55E1FAB611300DA3ABA /* AppDelegate.swift */,
 				DE07F5651FAB611300DA3ABA /* Assets.xcassets */,
 				DE07F5671FAB611300DA3ABA /* LaunchScreen.storyboard */,
@@ -139,9 +148,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE07F5611FAB611300DA3ABA /* ViewController.swift in Sources */,
+				850342F3230334BA0007479E /* ZooAnimalTableViewCell.swift in Sources */,
 				DE07F5711FAB627600DA3ABA /* ZooAnimal.swift in Sources */,
+				850342F1230333880007479E /* ZooAnimalTableViewController.swift in Sources */,
 				DE07F55F1FAB611300DA3ABA /* AppDelegate.swift in Sources */,
+				850342F72303489C0007479E /* ArrayOfAnimals.swift in Sources */,
+				850342F52303413A0007479E /* ZooDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
